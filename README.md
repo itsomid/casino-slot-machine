@@ -1,4 +1,4 @@
-
+![Image of Yaktocat](https://github.com/itsomid/casino-slot-machine/blob/main/public/img/screenshot.png)
 
 ## About Project
 
