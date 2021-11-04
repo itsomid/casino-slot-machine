@@ -86,9 +86,9 @@
     function startSpin(user_credit){
         $('#slotwrapper ul').playSpin({
             time: 1000,
-            // endNum: [1, 2, 3],
+            endNum: [1, 2, 3],
             onFinish: function (num) {
-                $('#btn-start').removeAttr('disabled')
+
                 const firstChar = num.charAt(0)
                 const secondChar = num.charAt(1)
                 const thirdChar = num.charAt(2)
@@ -113,6 +113,10 @@
                             startSpin(user_credit)
 
                         }
+                        else {
+                            $('#btn-start').removeAttr('disabled')
+                        }
+
                         updateUserCredit(result.data)
 
                     }
